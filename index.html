@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      
+    <div id="estrutura">
+
+
+      <div id="visor1">
+
+      <div id="visor">0</div>
+
+      </div>
+      
+      <table>
+        <!-- linha 1 -->
+        <tr>
+          <th><button id="fin" class="botaof" onclick="insira_finan('n')">n</button></th>
+          <th><button id="fip" class="botaof" onclick="insira_finan('pv')">p</button></th>
+          <th><button id="fii" class="botaof" onclick="insira_finan('i')">i</button></th>
+          <th><button id="fif" class="botaof" onclick="insira_finan('fv')">f</button></th>
+          <th><button class="botao1"></button></th>
+          <th><button class="botaoc" onclick="limpar()">ac</button></th>
+          <th><button class="botaoc"  onclick="apagar()">cl</button></th>
+          <th><button class="botaoo"  onclick="insira_Operation('%')">%</button></th>
+          <th><button class="botaoo"  onclick="insira_Operation('*')">x</button></th>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+          <td><button class="botaooo" onclick="insira_Operation_ex('rq')">√</button></td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('eq')">y<sup>2</sup></button></td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('e')">y<sup>x</sup></button>          </td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('chs')">ch</button></td>
+          <td><button class="botao1"></button></td>
+          <td><button class="botao"  onclick="insira('7')">7</button></td>
+          <td><button class="botao"  onclick="insira('8')">8</button></td>
+          <td><button class="botao"  onclick="insira('9')">9</button></td>
+          <td><button class="botaoo"  onclick="insira_Operation('+')">+</button></td>
+        </tr>
+        <!-- linha 3 -->
+        <tr>
+          <td><button class="botaooo" onclick="insira_Operation_ex('r')">√x</button></td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('ln')">ln</button></td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('log')">log<sub>x</sub></button></td>
+          <td><button class="botaooo" onclick="insira_pi('π')">π</button></td>
+          <td><button class="botao1"></button></td>
+          <td><button class="botao"   onclick="insira('4')">4</button></td>
+          <td><button class="botao"  onclick="insira('5')">5</button></td>
+          <td><button class="botao"  onclick="insira('6')">6</button></td>
+          <td><button class="botaoo"  onclick="insira_Operation('-')">-</button></td>
+        </tr>
+        <!-- linha 4 -->
+        <tr>
+          <td>
+            <button class="botaooo" id="c11" onclick="insira_teo('c1')">ca<sub>1</sub></button>
+          </td>
+          <td>
+            <button class="botaooo" id="c22" onclick="insira_teo('c2')" >ca<sub>2</sub></button>
+          </td>
+          <td><button class="botaooo" id="c33" onclick="insira_teo('h')">h</button></td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('fa')">!</button></td>
+          <td><button class="botao1"></button></td>
+          <td><button class="botao" onclick="insira('1')">1</button></td>
+          <td><button class="botao" onclick="insira('2')" >2</button></td>
+          <td><button class="botao" onclick="insira('3')">3</button></td>
+          <td rowspan="2"><button style="height:100px" class="botaoi" onclick="calculate()">=</button</td>
+
+        </tr>
+        <!-- linha 5 -->
+        <tr>
+          <td><button class="botaooo" onclick="insira_Operation_ex('sen')">sen</button></td>
+          <td><button class="botaooo" onclick="insira_Operation_ex('cos')">cos</button></td>
+          <td><button class="botaooo"  onclick="insira_Operation_ex('tg')">tg</button></td>
+          <td><button class="botaooo" onclick="casas()">nc</button></td>
+          <td><button class="botao1" ></button></td>
+          <td><button class="botao"  onclick="insira('.')">.</button></td>
+          <td><button class="botao"  onclick="insira('0')">0</button></td>
+          <td><button class="botaoo"  onclick="insira_Operation('/')">/</button></td>
+        </tr>
+      </table>
+
+    </div>
+     
+    <script src="main.js"></script>
+  </body>
+
+</html>
